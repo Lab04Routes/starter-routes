@@ -24,5 +24,16 @@ class First extends Application
 
 		$this->render();
 	}
+        public function zzz()
+	{
+		// this is the view we want shown
+		$this->data['pagebody'] = 'justone';
+ 
+		// build the first authors, to pass on to our view
+                $record = $this->quotes->first();
+                $this->data = array_merge($this->data, $record);
+
+		$this->render();
+	}
 
 }
