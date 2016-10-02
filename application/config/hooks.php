@@ -1,5 +1,4 @@
-<?php
-defined('BASEPATH') OR exit('No direct script access allowed');
+<?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
 /*
 | -------------------------------------------------------------------------
@@ -11,3 +10,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |	https://codeigniter.com/user_guide/general/hooks.html
 |
 */
+/*
+ * Defining a hook to bold capitalized words on quote pages.
+ */
+ $hook['display_override'] = array(
+     'class' => '',
+     'function' => 'starFourLetterWords',
+     'filename' => 'hooks.php',
+     'filepath' => 'hooks'
+ ); 
