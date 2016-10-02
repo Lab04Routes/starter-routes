@@ -55,6 +55,7 @@ $route['translate_uri_dashes'] = FALSE;
 $route['sleep'] = 'first/zzz';
 $route['lock/(:any)/(:any)'] = 'welcome/shucks';
 $route['show/(:num)'] = 'first/gimme/$1';
+$route['wise/bingo'] = 'Bingo';
 
 $route['dunno'] = function() {
 $source = './pix/surprise.jpg'; // an image you provide
